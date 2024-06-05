@@ -5,13 +5,13 @@ function Contacts() {
 const [listContacts] = useState([
   {
     title: 'Phone Number',
-    value: '+84123XXX'
+    value: '+91 7990735883'
   },{
     title: 'Email',
-    value: 'hohoang.dev@gmail.com'
+    value: 'dantaniaryan47@gmail.com'
   },{
     title: 'Instagram',
-    value: '@lundev.web'
+    value: '@Aditya_330_'
   }
 ])
 const divs = useRef([]);
@@ -24,7 +24,6 @@ CustomHook(scrollTab, divs);
         This is my Contacts
        </div>
        <div className="des" ref={(el) => el && divs.current.push(el)}>
-        {/* 20 */}
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perspiciatis quae veniam amet nesciunt voluptatibus quis consectetur consequatur quisquam harum.
        </div>
        <div className="list"  ref={(el) => el && divs.current.push(el)}>
