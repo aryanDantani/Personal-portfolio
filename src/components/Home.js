@@ -6,6 +6,7 @@ CustomHook(scrollTab);
 
 return (
     <section ref={scrollTab} className='home'>
+        
         <div className="content">
             <div className="name">
                 MY NAME IS <span>ARYAN</span>
@@ -18,6 +19,7 @@ return (
                 Download My CV
             </a>
         </div>
+
         <div className="avatar">
             <div className="card">
                 <img src="/profile.png" alt="" />
