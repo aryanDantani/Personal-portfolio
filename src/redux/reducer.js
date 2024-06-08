@@ -1,7 +1,9 @@
 const initialState = {
   activeTab: 'home'
   };
-  
+  /***
+   * RootReducer From Redux
+   */
   const rootReducer = (state = initialState, action) => {
     switch (action.type) {
       case 'ACTIVE_TAB':
