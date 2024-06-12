@@ -16,7 +16,6 @@ function Home() {
           laborum. Ea sed dolor ab qui, doloremque accusantium esse blanditiis
           possimus!
         </div>
-
         <a
           href="/democv.pdf"
           target="_blank"
@@ -26,7 +25,6 @@ function Home() {
           Download My CV
         </a>
       </div>
-
       <div className="avatar">
         <div className="card">
           <img src="/profile.png" alt="" />
