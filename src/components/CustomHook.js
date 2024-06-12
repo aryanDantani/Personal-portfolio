@@ -13,10 +13,13 @@ useEffect(() => {
     }
     
     if(divs !== null){
+      
         divs.current.forEach((div) => {
             div.classList.add('animation');
           });
+
         const handlScroll = () => {
+
           const scrollPosition = window.scrollY;
           divs.current.forEach((div) => {
             const offsetTop = div.getBoundingClientRect().top + scrollPosition;
@@ -26,6 +29,7 @@ useEffect(() => {
               div.classList.remove('active');
             }
           });
+
         }
           window.addEventListener('scroll', handlScroll);
     }
