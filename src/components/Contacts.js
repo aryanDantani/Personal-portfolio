@@ -41,7 +41,6 @@ function Contacts() {
           </div>
         ))}
       </div>
-      
     </section>
   );
 }
