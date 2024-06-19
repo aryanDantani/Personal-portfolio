@@ -27,7 +27,7 @@ const CustomHook = (refTab = null, refList = null) => {
           }
         });
       };
-      
+
       window.addEventListener("scroll", handlScroll);
     }
   }, [activeTab]);
