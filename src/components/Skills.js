@@ -7,6 +7,8 @@ import {
   faJs,
   faVuejs,
   faLaravel,
+  faNodeJs,
+  faSass,
 } from "@fortawesome/free-brands-svg-icons";
 import CustomHook from "./CustomHook";
 
@@ -36,14 +38,14 @@ function Skills() {
       icon: faReact,
     },
     {
-      name: "VueJs",
+      name: "NodeJs",
       des: "Laborum commodo reprehenderit anim sunt est. Aliquip ipsum nisi incididunt enim ex id et sit sint magna. Deserunt minim ullamco aute veniam. Do irure nulla ut quis.",
-      icon: faVuejs,
+      icon: faNodeJs,
     },
     {
-      name: "Laravel",
+      name: "Sass",
       des: "Ullamco incididunt adipisicing laboris ullamco ipsum quis nulla non. Non et irure amet in sint duis Lorem est eiusmod nisi. Aute dolor eiusmod esse et cupidatat ex minim do reprehenderit ut aute. In commodo do consectetur qui occaecat cupidatat sint ullamco dolor tempor ullamco elit.",
-      icon: faLaravel,
+      icon: faSass,
     },
   ]);
   return (
