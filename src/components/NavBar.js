@@ -14,6 +14,7 @@ const NavBar = ({ activeTab }) => {
   const toggleNav = () => {
     changeStatusNav(statusNav === null ? "active" : null);
   };
+  
   const changeTab = (value) => {
     dispatch(changeTabActive(value));
     toggleNav();
@@ -21,9 +22,11 @@ const NavBar = ({ activeTab }) => {
 
   return (
     <header>
+
       <div className="logo">
         <img src="/logo.png" alt="" /> Portfolio
       </div>
+
       <nav className={statusNav}>
         {linkNav.map((value) => (
           <span

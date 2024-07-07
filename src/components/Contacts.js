@@ -25,6 +25,7 @@ function Contacts() {
 
   return (
     <section className="contacts" ref={scrollTab}>
+      
       <div className="title" ref={(el) => el && divs.current.push(el)}>
         This is my Contacts
       </div>
