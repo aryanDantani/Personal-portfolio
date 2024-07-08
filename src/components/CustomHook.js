@@ -11,12 +11,10 @@ const CustomHook = (refTab = null, refList = null) => {
       const componentNode = scrollTab.current;
       componentNode.scrollIntoView({ behavior: "smooth" });
     }
-
     if (divs !== null) {
       divs.current.forEach((div) => {
         div.classList.add("animation");
       });
-      
       const handlScroll = () => {
         const scrollPosition = window.scrollY;
         divs.current.forEach((div) => {
@@ -32,7 +30,6 @@ const CustomHook = (refTab = null, refList = null) => {
       window.addEventListener("scroll", handlScroll);
     }
   }, [activeTab]);
-  
 };
 
 export default CustomHook;
