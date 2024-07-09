@@ -47,6 +47,7 @@ function Projects() {
         consequatur quisquam harum.
       </div>
       <div className="list">
+        
         {listProjects.map((value, key) => (
           <div
             className="item"
@@ -82,6 +83,7 @@ function Projects() {
 
           </div>
         ))}
+
       </div>
     </section>
   );

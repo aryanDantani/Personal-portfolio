@@ -28,6 +28,7 @@ function Home() {
         </a>
         
       </div>
+
       <div className="avatar">
         <div className="card">
           <img src="/profile.png" alt="" />
@@ -38,6 +39,7 @@ function Home() {
             <div>Male</div>
           </div>
         </div>
+        
       </div>
     </section>
   );

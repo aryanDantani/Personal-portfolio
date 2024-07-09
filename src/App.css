@@ -366,6 +366,7 @@ section.contacts{
                 grid-row-start: 1;
             }
         }
+        
         &.projects{
             & .list{
                 & .item{
@@ -387,6 +388,7 @@ section.contacts{
             }
         }
     }
+
     header{
         & nav{
             width: 80%;

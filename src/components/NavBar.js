@@ -21,6 +21,7 @@ const NavBar = ({ activeTab }) => {
 
   return (
     <header>
+
       <div className="logo">
         <img src="/logo.png" alt="" /> Portfolio
       </div>
@@ -36,6 +37,7 @@ const NavBar = ({ activeTab }) => {
           </span>
         ))}
       </nav>
+      
       <div className="icon-bar" onClick={toggleNav}>
         <FontAwesomeIcon icon={faBars} />
       </div>
