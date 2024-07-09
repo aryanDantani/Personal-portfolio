@@ -44,14 +44,13 @@ function Projects() {
       <div className="title" ref={(el) => el && divs.current.push(el)}>
         This is my Projects
       </div>
-
       <div className="des" ref={(el) => el && divs.current.push(el)}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
         perspiciatis quae veniam amet nesciunt voluptatibus quis consectetur
         consequatur quisquam harum.
       </div>
-
       <div className="list">
+        
         {listProjects.map((value, key) => (
           <div
             className="item"
@@ -92,6 +91,7 @@ function Projects() {
             
           </div>
         ))}
+
       </div>
     </section>
   );

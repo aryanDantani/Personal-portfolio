@@ -22,9 +22,11 @@ const NavBar = ({ activeTab }) => {
 
   return (
     <header>
+
       <div className="logo">
         <img src="/logo.png" alt="" /> Portfolio
       </div>
+
       <nav className={statusNav}>
         {linkNav.map((value) => (
           <span

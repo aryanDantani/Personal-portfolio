@@ -19,6 +19,7 @@ function Contacts() {
     },
   ]);
   const divs = useRef([]);
+  
   const scrollTab = useRef();
 
   CustomHook(scrollTab, divs);
@@ -33,6 +34,7 @@ function Contacts() {
         perspiciatis quae veniam amet nesciunt voluptatibus quis consectetur
         consequatur quisquam harum.
       </div>
+
       <div className="list" ref={(el) => el && divs.current.push(el)}>
         {listContacts.map((value, key) => (
           <div className="item" key={key}>
@@ -41,6 +43,7 @@ function Contacts() {
           </div>
         ))}
       </div>
+      
     </section>
   );
 }
