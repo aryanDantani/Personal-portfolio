@@ -48,6 +48,7 @@ function Skills() {
       icon: faSass,
     },
   ]);
+  
   return (
     <section className="skills" ref={scrollTab}>
       
