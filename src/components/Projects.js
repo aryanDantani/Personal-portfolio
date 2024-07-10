@@ -50,7 +50,6 @@ function Projects() {
         consequatur quisquam harum.
       </div>
       <div className="list">
-        
         {listProjects.map((value, key) => (
           <div
             className="item"
@@ -60,7 +59,6 @@ function Projects() {
             <div className="images">
               <img src={value.images} alt="" />
             </div>
-
             <div className="content">
               <h3>{value.name}</h3>
               <div className="des">{value.des}</div>
@@ -85,13 +83,10 @@ function Projects() {
                   <h4>Languages</h4>
                   <div className="des">{value.language}</div>
                 </div>
-
               </div>
             </div>
-            
           </div>
         ))}
-
       </div>
     </section>
   );
