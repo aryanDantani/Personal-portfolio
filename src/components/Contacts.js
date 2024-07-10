@@ -19,9 +19,7 @@ function Contacts() {
     },
   ]);
   const divs = useRef([]);
-  
   const scrollTab = useRef();
-
   CustomHook(scrollTab, divs);
 
   return (

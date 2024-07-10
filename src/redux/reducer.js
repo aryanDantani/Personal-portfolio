@@ -1,4 +1,3 @@
-
 const initialState = {
   activeTab: "home",
 };

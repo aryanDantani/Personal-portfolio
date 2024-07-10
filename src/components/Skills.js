@@ -51,7 +51,6 @@ function Skills() {
   
   return (
     <section className="skills" ref={scrollTab}>
-      
       <div className="title" ref={(el) => el && divs.current.push(el)}>
         This is my Skills
       </div>
@@ -73,7 +72,6 @@ function Skills() {
           </div>
         ))}
       </div>
-
     </section>
   );
 }

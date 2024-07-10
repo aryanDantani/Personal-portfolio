@@ -366,7 +366,6 @@ section.contacts{
                 grid-row-start: 1;
             }
         }
-        
         &.projects{
             & .list{
                 & .item{
