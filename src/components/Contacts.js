@@ -18,8 +18,11 @@ function Contacts() {
       value: "@Aditya_330_",
     },
   ]);
+
   const divs = useRef([]);
+  
   const scrollTab = useRef();
+
   CustomHook(scrollTab, divs);
 
   return (

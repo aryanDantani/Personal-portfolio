@@ -10,7 +10,6 @@ function Home() {
         <div className="name">
           MY NAME IS <span>ARYAN</span>
         </div>
-
         <div className="des">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
           officiis beatae repellendus rem ullam, ipsam nemo dolorem dolorum illo
@@ -36,7 +35,6 @@ function Home() {
             <div>Male</div>
           </div>
         </div>
-        
       </div>
     </section>
   );
