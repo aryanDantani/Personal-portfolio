@@ -63,6 +63,7 @@ function Projects() {
               <h3>{value.name}</h3>
               <div className="des">{value.des}</div>
               <div className="mission">
+                
                 <div>
                   <FontAwesomeIcon icon={faPersonCircleQuestion} />
                 </div>
@@ -83,6 +84,7 @@ function Projects() {
                   <h4>Languages</h4>
                   <div className="des">{value.language}</div>
                 </div>
+
               </div>
             </div>
           </div>
