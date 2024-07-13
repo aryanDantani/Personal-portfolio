@@ -60,6 +60,7 @@ function Projects() {
               <img src={value.images} alt="" />
             </div>
             <div className="content">
+              
               <h3>{value.name}</h3>
               <div className="des">{value.des}</div>
               <div className="mission">

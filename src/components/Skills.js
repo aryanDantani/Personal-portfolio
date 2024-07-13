@@ -72,6 +72,7 @@ function Skills() {
             <div className="des">{value.des}</div>
           </div>
         ))}
+        
       </div>
       
     </section>
