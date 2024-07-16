@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useSelector } from "react-redux";
 
 const CustomHook = (refTab = null, refList = null) => {
-  
   const scrollTab = refTab;
   const divs = refList;
   const activeTab = useSelector((state) => state.activeTab);
@@ -12,7 +11,6 @@ const CustomHook = (refTab = null, refList = null) => {
       const componentNode = scrollTab.current;
       componentNode.scrollIntoView({ behavior: "smooth" });
     }
-
     if (divs !== null) {
       divs.current.forEach((div) => {
         div.classList.add("animation");
@@ -28,7 +26,6 @@ const CustomHook = (refTab = null, refList = null) => {
           }
         });
       };
-      
       window.addEventListener("scroll", handlScroll);
     }
   }, [activeTab]);
