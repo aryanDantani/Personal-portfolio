@@ -5,8 +5,6 @@ import {
   faHtml5,
   faCss3,
   faJs,
-  faVuejs,
-  faLaravel,
   faNodeJs,
   faSass,
 } from "@fortawesome/free-brands-svg-icons";
@@ -48,12 +46,13 @@ function Skills() {
       icon: faSass,
     },
   ]);
-  
+
   return (
     <section className="skills" ref={scrollTab}>
       <div className="title" ref={(el) => el && divs.current.push(el)}>
         This is my Skills
       </div>
+
       <div className="des" ref={(el) => el && divs.current.push(el)}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
         perspiciatis quae veniam amet nesciunt voluptatibus quis consectetur
@@ -72,9 +71,7 @@ function Skills() {
             <div className="des">{value.des}</div>
           </div>
         ))}
-        
       </div>
-      
     </section>
   );
 }

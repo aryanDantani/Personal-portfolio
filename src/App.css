@@ -12,9 +12,11 @@ body{
     background-image: linear-gradient(
         to right, transparent 0 49px, #eee1 49px
     ),
+
     linear-gradient(
         to bottom, transparent 0 49px, #eee1 49px
     );
+    
     background-size: 50px 50px;
     &::before{
         position: fixed;

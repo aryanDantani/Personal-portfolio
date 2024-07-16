@@ -7,12 +7,10 @@ function Contacts() {
       title: "Phone Number",
       value: "+91 7990735883",
     },
-
     {
       title: "Email",
       value: "dantaniaryan47@gmail.com",
     },
-
     {
       title: "Instagram",
       value: "@Aditya_330_",
@@ -21,7 +19,6 @@ function Contacts() {
 
   const divs = useRef([]);
   const scrollTab = useRef();
-
   CustomHook(scrollTab, divs);
 
   return (
@@ -43,7 +40,6 @@ function Contacts() {
           </div>
         ))}
       </div>
-      
     </section>
   );
 }
