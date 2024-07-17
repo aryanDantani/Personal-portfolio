@@ -9,16 +9,14 @@ const NavBar = ({ activeTab }) => {
   const dispatch = useDispatch();
   const [linkNav] = useState(["home", "skills", "projects", "contacts"]);
   const [statusNav, changeStatusNav] = useState(null);
-
   const toggleNav = () => {
     changeStatusNav(statusNav === null ? "active" : null);
   };
-
+  
   const changeTab = (value) => {
     dispatch(changeTabActive(value));
     toggleNav();
   };
-
   return (
     <header>
       <div className="logo">
