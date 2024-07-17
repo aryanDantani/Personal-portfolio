@@ -39,7 +39,6 @@ main{
     max-width: 100%;
     margin: auto;
 }
-
 /* navbar */
 header{
     position: fixed;
@@ -339,14 +338,12 @@ section.contacts{
 }
 
 @media screen and (max-width: 1023px) {
-    
     section.home{
         & .content{
             & .name{
                 font-size: 4em;
             }
         }
-
         & .avatar{
             & img{
                 max-height: 500px;
