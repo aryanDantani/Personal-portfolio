@@ -309,6 +309,7 @@ section.contacts{
         max-width: 500px;
         margin: auto;
     }
+    
     & .list{
         text-align: center;
         & .item{
@@ -324,6 +325,7 @@ section.contacts{
     opacity: 0;
     transition: 0.5s;
 }
+
 .animation.active{
     opacity: 1;
     filter: blur(0);

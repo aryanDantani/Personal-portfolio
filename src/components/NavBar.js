@@ -17,11 +17,13 @@ const NavBar = ({ activeTab }) => {
     dispatch(changeTabActive(value));
     toggleNav();
   };
+
   return (
     <header>
       <div className="logo">
         <img src="/logo.png" alt="" /> Portfolio
       </div>
+      
       <nav className={statusNav}>
         {linkNav.map((value) => (
           <span
@@ -33,10 +35,12 @@ const NavBar = ({ activeTab }) => {
           </span>
         ))}
       </nav>
+
       <div className="icon-bar" onClick={toggleNav}>
         <FontAwesomeIcon icon={faBars} />
       </div>
     </header>
+
   );
 };
 
