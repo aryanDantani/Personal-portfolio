@@ -84,15 +84,6 @@ section{
     box-sizing: border-box;
     top: 0;
 }
-/* .delay-02{
-    animation-delay: 0.2s!important;
-}
-.delay-04{
-    animation-delay: 0.4s!important;
-}
-.delay-06{
-    animation-delay: 0.6s!important;
-} */
 section.home{
     padding-top: 150px;
     display: grid;
@@ -309,7 +300,6 @@ section.contacts{
         max-width: 500px;
         margin: auto;
     }
-    
     & .list{
         text-align: center;
         & .item{

@@ -6,9 +6,7 @@ import Projects from "./components/Projects";
 import Contacts from "./components/Contacts";
 
 function App() {
-
   return (
-
     <main>
       <NavBar />
       <Home />
@@ -16,7 +14,6 @@ function App() {
       <Projects />
       <Contacts />
     </main>
-    
   );
 }
 

@@ -62,18 +62,15 @@ function Projects() {
                 <div>
                   <FontAwesomeIcon icon={faPersonCircleQuestion} />
                 </div>
-
                 <div>
                   <h4>Mission</h4>
                   <div className="des">{value.mission}</div>
                 </div>
               </div>
-              
               <div className="mission">
                 <div>
                   <FontAwesomeIcon icon={faEarthAmericas} />
                 </div>
-
                 <div>
                   <h4>Languages</h4>
                   <div className="des">{value.language}</div>
