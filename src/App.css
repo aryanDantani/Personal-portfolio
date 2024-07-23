@@ -34,11 +34,13 @@ body{
         filter: blur(250px);
     }
 }
+
 main{
     width: 1300px;
     max-width: 100%;
     margin: auto;
 }
+
 /* navbar */
 header{
     position: fixed;
@@ -75,6 +77,7 @@ header{
         display: none;
     }
 }
+
 /* home */
 section{
     width: 1300px;
@@ -84,6 +87,7 @@ section{
     box-sizing: border-box;
     top: 0;
 }
+
 section.home{
     padding-top: 150px;
     display: grid;
@@ -159,6 +163,7 @@ section.home{
         }
     }
 }
+
 section.skills{
     & .title{
         text-align: center;
