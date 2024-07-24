@@ -49,17 +49,14 @@ function Skills() {
 
   return (
     <section className="skills" ref={scrollTab}>
-
       <div className="title" ref={(el) => el && divs.current.push(el)}>
         This is my Skills
       </div>
-
       <div className="des" ref={(el) => el && divs.current.push(el)}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
         perspiciatis quae veniam amet nesciunt voluptatibus quis consectetur
         consequatur quisquam harum.
       </div>
-
       <div className="list">
         {listSkills.map((value, key) => (
           <div
@@ -73,7 +70,6 @@ function Skills() {
           </div>
         ))}
       </div>
-      
     </section>
   );
 }
