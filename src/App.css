@@ -12,11 +12,9 @@ body{
     background-image: linear-gradient(
         to right, transparent 0 49px, #eee1 49px
     ),
-
     linear-gradient(
         to bottom, transparent 0 49px, #eee1 49px
     );
-    
     background-size: 50px 50px;
     &::before{
         position: fixed;
@@ -34,13 +32,11 @@ body{
         filter: blur(250px);
     }
 }
-
 main{
     width: 1300px;
     max-width: 100%;
     margin: auto;
 }
-
 /* navbar */
 header{
     position: fixed;
@@ -87,7 +83,6 @@ section{
     box-sizing: border-box;
     top: 0;
 }
-
 section.home{
     padding-top: 150px;
     display: grid;
@@ -163,7 +158,6 @@ section.home{
         }
     }
 }
-
 section.skills{
     & .title{
         text-align: center;
@@ -291,7 +285,6 @@ section.projects{
         }
     }
 }
-
 section.contacts{
     padding-bottom: 220px;
     & .title{
@@ -312,7 +305,6 @@ section.contacts{
         }
     }
 }
-
 /* animation */
 .animation{
     transform: translateY(50px);

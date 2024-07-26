@@ -7,7 +7,6 @@ const CustomHook = (refTab = null, refList = null) => {
   const activeTab = useSelector((state) => state.activeTab);
 
   useEffect(() => {
-    
     if (scrollTab.current.classList.contains(activeTab)) {
       const componentNode = scrollTab.current;
       componentNode.scrollIntoView({ behavior: "smooth" });
@@ -20,6 +19,7 @@ const CustomHook = (refTab = null, refList = null) => {
 
       const handlScroll = () => {
         const scrollPosition = window.scrollY;
+
         divs.current.forEach((div) => {
           const offsetTop = div.getBoundingClientRect().top + scrollPosition;
           if (scrollPosition >= offsetTop - window.innerHeight / 1.5) {
@@ -28,8 +28,9 @@ const CustomHook = (refTab = null, refList = null) => {
             div.classList.remove("active");
           }
         });
-      };
 
+      };
+      
       window.addEventListener("scroll", handlScroll);
     }
   }, [activeTab]);

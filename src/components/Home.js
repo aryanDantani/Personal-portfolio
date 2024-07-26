@@ -7,7 +7,6 @@ function Home() {
   return (
     <section ref={scrollTab} className="home">
       <div className="content">
-
         <div className="name">
           MY NAME IS <span>ARYAN</span>
         </div>
@@ -29,22 +28,17 @@ function Home() {
         </a>
 
       </div>
-
+      
       <div className="avatar">
-
         <div className="card">
-
           <img src="/profile.png" alt="" />
-
           <div className="info">
             <div>Developer</div>
             <div>VietNamese</div>
             <div>03/12</div>
             <div>Male</div>
           </div>
-
         </div>
-        
       </div>
     </section>
   );
