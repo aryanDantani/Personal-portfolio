@@ -7,12 +7,10 @@ function Contacts() {
       title: "Phone Number",
       value: "+91 7990735883",
     },
-
     {
       title: "Email",
       value: "dantaniaryan47@gmail.com",
     },
-    
     {
       title: "Instagram",
       value: "@Aditya_330_",
