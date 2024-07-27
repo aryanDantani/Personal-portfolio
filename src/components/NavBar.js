@@ -13,10 +13,12 @@ const NavBar = ({ activeTab }) => {
   const toggleNav = () => {
     changeStatusNav(statusNav === null ? "active" : null);
   };
+
   const changeTab = (value) => {
     dispatch(changeTabActive(value));
     toggleNav();
   };
+  
   return (
     <header>
       <div className="logo">
