@@ -16,10 +16,14 @@ const CustomHook = (refTab = null, refList = null) => {
       divs.current.forEach((div) => {
         div.classList.add("animation");
       });
+      
       const handlScroll = () => {
         const scrollPosition = window.scrollY;
+
         divs.current.forEach((div) => {
+
           const offsetTop = div.getBoundingClientRect().top + scrollPosition;
+
           if (scrollPosition >= offsetTop - window.innerHeight / 1.5) {
             div.classList.add("active");
           } else {
@@ -27,8 +31,11 @@ const CustomHook = (refTab = null, refList = null) => {
           }
         });
       };
+
       window.addEventListener("scroll", handlScroll);
+
     }
+
   }, [activeTab]);
   
 };
