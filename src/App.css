@@ -169,12 +169,14 @@ section.skills{
         font-size: 5vw;
         font-family: 'MuseoModerno', system-ui;
     }
+
     & .des{
         color: #eee5;
         text-align: center;
         max-width: 500px;
         margin: auto;
     }
+
     & .list{
         margin-top: 50px;
         display: grid;
@@ -190,6 +192,7 @@ section.skills{
             background-image: linear-gradient(
                 -45deg, red, blue
             );
+
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -197,6 +200,7 @@ section.skills{
             border-radius: 20px;
             background-size: 200% auto;
         }
+        
         & .item{
             backdrop-filter: blur(50px);
             padding: 20px;
