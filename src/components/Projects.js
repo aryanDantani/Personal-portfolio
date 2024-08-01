@@ -37,24 +37,19 @@ function Projects() {
   ]);
 
   const divs = useRef([]);
-
   const scrollTab = useRef();
-
   CustomHook(scrollTab, divs);
 
   return (
     <section className="projects" ref={scrollTab}>
-      
       <div className="title" ref={(el) => el && divs.current.push(el)}>
         This is my Projects
       </div>
-
       <div className="des" ref={(el) => el && divs.current.push(el)}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
         perspiciatis quae veniam amet nesciunt voluptatibus quis consectetur
         consequatur quisquam harum.
       </div>
-
       <div className="list">
         {listProjects.map((value, key) => (
           <div
@@ -65,32 +60,26 @@ function Projects() {
             <div className="images">
               <img src={value.images} alt="" />
             </div>
-
             <div className="content">
               <h3>{value.name}</h3>
               <div className="des">{value.des}</div>
-
               <div className="mission">
                 <div>
                   <FontAwesomeIcon icon={faPersonCircleQuestion} />
                 </div>
-
                 <div>
                   <h4>Mission</h4>
                   <div className="des">{value.mission}</div>
                 </div>
-
               </div>
               <div className="mission">
                 <div>
                   <FontAwesomeIcon icon={faEarthAmericas} />
                 </div>
-
                 <div>
                   <h4>Languages</h4>
                   <div className="des">{value.language}</div>
                 </div>
-                
               </div>
             </div>
           </div>
