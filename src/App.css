@@ -184,6 +184,7 @@ section.skills{
         justify-content: space-between;
         gap: 3vw;
         position: relative;
+
         &::before{
             position: absolute;
             content: '';
@@ -206,12 +207,14 @@ section.skills{
             padding: 20px;
             border-radius: 20px;
             background-color: #01082488;
+
             & svg{
                 font-size: 30px;
                 background-color: #eee2;
                 padding: 10px;
                 border-radius: 10px;
             }
+
             & .des{
                 text-align: left;
                 width: 100%;
@@ -227,12 +230,14 @@ section.projects{
         font-size: 5vw;
         font-family: 'MuseoModerno', system-ui;
     }
+
     & .des{
         color: #eee5;
         text-align: center;
         max-width: 500px;
         margin: auto;
     }
+
     & .list{
         margin-top: 50px;
         & .item{
@@ -242,6 +247,7 @@ section.projects{
             align-items: center;
             margin-bottom: 100px;
             gap: 20px;
+
             & .images{
                 background-image: linear-gradient(
                     -45deg, #473bb4, #be24a9
@@ -256,6 +262,7 @@ section.projects{
                     border-radius: 10px;
                     box-shadow: 0 20px 40px #010824;
                 }
+                
             }
             & .content{
                 & h3{
