@@ -2,29 +2,23 @@ import React, { useState, useRef } from "react";
 import CustomHook from "./CustomHook";
 
 function Contacts() {
-
   const [listContacts] = useState([
     {
       title: "Phone Number",
       value: "+91 7990735883",
     },
-
     {
       title: "Email",
       value: "dantaniaryan47@gmail.com",
     },
-
     {
       title: "Instagram",
       value: "@Aditya_330_",
     },
-
   ]);
 
   const divs = useRef([]);
-
   const scrollTab = useRef();
-  
   CustomHook(scrollTab, divs);
 
   return (

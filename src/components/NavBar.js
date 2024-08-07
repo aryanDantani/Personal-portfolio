@@ -8,9 +8,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 const NavBar = ({ activeTab }) => {
 
   const dispatch = useDispatch();
-
   const [linkNav] = useState(["home", "skills", "projects", "contacts"]);
-
   const [statusNav, changeStatusNav] = useState(null);
 
   const toggleNav = () => {
@@ -27,7 +25,6 @@ const NavBar = ({ activeTab }) => {
       <div className="logo">
         <img src="/logo.png" alt="" /> Portfolio
       </div>
-
       <nav className={statusNav}>
         {linkNav.map((value) => (
           <span
@@ -39,7 +36,6 @@ const NavBar = ({ activeTab }) => {
           </span>
         ))}
       </nav>
-      
       <div className="icon-bar" onClick={toggleNav}>
         <FontAwesomeIcon icon={faBars} />
       </div>
