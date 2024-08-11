@@ -12,9 +12,11 @@ body{
     background-image: linear-gradient(
         to right, transparent 0 49px, #eee1 49px
     ),
+
     linear-gradient(
         to bottom, transparent 0 49px, #eee1 49px
     );
+
     background-size: 50px 50px;
     &::before{
         position: fixed;
@@ -31,12 +33,15 @@ body{
         pointer-events: none;
         filter: blur(250px);
     }
+
 }
+
 main{
     width: 1300px;
     max-width: 100%;
     margin: auto;
 }
+
 /* navbar */
 header{
     position: fixed;
@@ -53,9 +58,11 @@ header{
     box-sizing: border-box;
     z-index: 100;
     backdrop-filter: blur(10px);
+
     & img{
         width: 50px;
     }
+    
     & .logo, nav{
         display: flex;
         align-items: center;

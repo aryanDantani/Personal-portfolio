@@ -15,6 +15,7 @@ function Projects() {
       language: "HTML5, CSS3, React JS, SockerIO,...",
       images: "/MusicPlayer.png",
     },
+
     {
       name: "Project Real-time chating in website",
       des: "Eu voluptate sit do labore consectetur in ad esse qui laborum ad eiusmod. Esse ea velit culpa exercitation anim enim reprehenderit. Fugiat nostrud non dolore aliquip quis in ea amet duis.",
@@ -22,6 +23,7 @@ function Projects() {
       language: "HTML5, CSS3, React JS, SockerIO,...",
       images: "/project2.PNG",
     },
+
     {
       name: "Project Real-time chating in website",
       des: "Eu voluptate sit do labore consectetur in ad esse qui laborum ad eiusmod. Esse ea velit culpa exercitation anim enim reprehenderit. Fugiat nostrud non dolore aliquip quis in ea amet duis.",
@@ -29,22 +31,28 @@ function Projects() {
       language: "HTML5, CSS3, React JS, SockerIO,...",
       images: "/project2.PNG",
     },
+
   ]);
 
   const divs = useRef([]);
+
   const scrollTab = useRef();
+
   CustomHook(scrollTab, divs);
 
   return (
     <section className="projects" ref={scrollTab}>
+
       <div className="title" ref={(el) => el && divs.current.push(el)}>
         This is my Projects
       </div>
+
       <div className="des" ref={(el) => el && divs.current.push(el)}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
         perspiciatis quae veniam amet nesciunt voluptatibus quis consectetur
         consequatur quisquam harum.
       </div>
+
       <div className="list">
         {listProjects.map((value, key) => (
           <div
@@ -55,6 +63,7 @@ function Projects() {
             <div className="images">
               <img src={value.images} alt="" />
             </div>
+
             <div className="content">
               <h3>{value.name}</h3>
               <div className="des">{value.des}</div>
@@ -77,9 +86,11 @@ function Projects() {
                 </div>
               </div>
             </div>
+
           </div>
         ))}
       </div>
+      
     </section>
   );
 }
