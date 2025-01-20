@@ -8,15 +8,17 @@ const CustomHook = (refTab = null, refList = null) => {
   const activeTab = useSelector((state) => state.activeTab);
 
   useEffect(() => {
-    if (scrollTab.current.classList.contains(activeTab)) {
+    if (scrollTab?.current?.classList.contains(activeTab)) {
       const componentNode = scrollTab.current;
       componentNode.scrollIntoView({ behavior: "smooth" });
     }
+
     if (divs !== null) {
       divs.current.forEach((div) => {
         div.classList.add("animation");
       });
-      const handlScroll = () => {
+
+      const handleScroll = () => {
         const scrollPosition = window.scrollY;
         divs.current.forEach((div) => {
           const offsetTop = div.getBoundingClientRect().top + scrollPosition;
@@ -27,9 +29,15 @@ const CustomHook = (refTab = null, refList = null) => {
           }
         });
       };
-      window.addEventListener("scroll", handlScroll);
+
+      window.addEventListener("scroll", handleScroll);
+
+      // Cleanup function to remove the event listener
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
     }
-  }, [activeTab]);
+  }, [scrollTab, divs, activeTab]);
 };
 
 export default CustomHook;
