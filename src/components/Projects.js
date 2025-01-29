@@ -10,7 +10,7 @@ function Projects() {
   const [listProjects] = useState([
     {
       name: "Multi Mart",
-      des: "Eu voluptate sit do labore consectetur in ad esse qui laborum ad eiusmod. Esse ea velit culpa exercitation anim enim reprehenderit. Fugiat nostrud non dolore aliquip quis in ea amet duis.",
+      des: `Beauty UI similar to ecommerce website Fully responsive and mobile friendly User can add items to cart User can view details of an item User can show total price in cart In Item page user can add quantity of item to cart instead of click add more and more`,
       mission: "Back-end Developer, system analysis and design",
       language: "HTML5, CSS3, React JS, SockerIO,...",
       images: "/MultiMart.png",
