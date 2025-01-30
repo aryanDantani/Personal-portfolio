@@ -23,7 +23,7 @@ function Skills() {
     },
 
     {
-      name: "CSS",
+      name: "CSS / Tailwind",
       des: "Ad ad in cillum ut labore irure aliqua. Ex sit dolore ipsum id duis nostrud veniam. Nisi duis ut veniam ut eiusmod occaecat ullamco ullamco. Consequat eu sunt ut elit dolor sint magna magna velit ex. Excepteur occaecat reprehenderit tempor veniam.",
       icon: faCss3,
     },
@@ -35,13 +35,13 @@ function Skills() {
     },
 
     {
-      name: "ReactJs",
+      name: "ReactJs / TypeScript / Next.js",
       des: "Voluptate qui adipisicing dolore pariatur laboris deserunt consectetur reprehenderit. Esse dolor elit ullamco duis quis aliquip fugiat ipsum nisi est et. Nisi ut deserunt excepteur irure aliquip proident ",
       icon: faReact,
     },
 
     {
-      name: "NodeJs",
+      name: "NodeJs / Nest.js",
       des: "Laborum commodo reprehenderit anim sunt est. Aliquip ipsum nisi incididunt enim ex id et sit sint magna. Deserunt minim ullamco aute veniam. Do irure nulla ut quis.",
       icon: faNodeJs,
     },

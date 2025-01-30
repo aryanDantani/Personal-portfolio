@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 
@@ -21,7 +22,8 @@ const CustomHook = (refTab = null, refList = null) => {
         div.classList.add("animation");
       });
 
-      const handlScroll = () => {
+
+      const handleScroll = () => {
         const scrollPosition = window.scrollY;
         divs.current.forEach((div) => {
           const offsetTop = div.getBoundingClientRect().top + scrollPosition;
@@ -34,9 +36,14 @@ const CustomHook = (refTab = null, refList = null) => {
       };
 
       window.addEventListener("scroll", handlScroll);
-      
+      window.addEventListener("scroll", handleScroll);
+
+      // Cleanup function to remove the event listener
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
     }
-  }, [activeTab]);
+  }, [scrollTab, divs, activeTab]);
 };
 
 export default CustomHook;

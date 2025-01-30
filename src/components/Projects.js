@@ -9,11 +9,13 @@ import CustomHook from "./CustomHook";
 function Projects() {
   const [listProjects] = useState([
     {
-      name: "Project Music-Player in website",
-      des: "Eu voluptate sit do labore consectetur in ad esse qui laborum ad eiusmod. Esse ea velit culpa exercitation anim enim reprehenderit. Fugiat nostrud non dolore aliquip quis in ea amet duis.",
+      name: "Multi Mart",
+      des: `Beauty UI similar to ecommerce website Fully responsive and mobile friendly User can add items to cart User can view details of an item User can show total price in cart In Item page user can add quantity of item to cart instead of click add more and more`,
       mission: "Back-end Developer, system analysis and design",
       language: "HTML5, CSS3, React JS, SockerIO,...",
-      images: "/MusicPlayer.png",
+      images: "/MultiMart.png",
+      projectLink:
+        "https://678def3dabf58a00083e9bbf--multi-ecommerce-mart.netlify.app/",
     },
 
     {
@@ -61,7 +63,15 @@ function Projects() {
             ref={(el) => el && divs.current.push(el)}
           >
             <div className="images">
-              <img src={value.images} alt="" />
+              <img
+                src={value.images}
+                alt=""
+                onClick={() =>
+                  value.projectLink
+                    ? window.open(value.projectLink, "_blank")
+                    : ""
+                }
+              />
             </div>
 
             <div className="content">
