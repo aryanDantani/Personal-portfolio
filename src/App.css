@@ -2,6 +2,44 @@
 
 @import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;500;700&display=swap");
 
+body{
+    margin: 0;
+    font-family: Poppins;
+    background-color: #010824;
+    color: #eee;
+    font-size: 15px;
+    min-height: 100vh;
+    background-image: linear-gradient(
+        to right, transparent 0 49px, #eee1 49px
+    ),
+
+    linear-gradient(
+        to bottom, transparent 0 49px, #eee1 49px
+    );
+
+    background-size: 50px 50px;
+    &::before{
+        position: fixed;
+        width: 400px;
+        height: 400px;
+        content: '';
+        background-image: linear-gradient(
+            to right, #D02E23, #7A43B6
+        );
+        z-index: -1;
+        top: -200px;
+        left: calc(50% - 200px);
+        border-radius: 50% 50% 0% 0%;
+        pointer-events: none;
+        filter: blur(250px);
+    }
+
+}
+
+main{
+    width: 1300px;
+    max-width: 100%;
+    margin: auto;
 body {
   margin: 0;
   font-family: Poppins;
@@ -31,6 +69,7 @@ main {
   max-width: 100%;
   margin: auto;
 }
+
 /* navbar */
 header {
   position: fixed;
@@ -54,6 +93,27 @@ header {
   nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+
+    & img{
+        width: 50px;
+    }
+    
+    & .logo, nav{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        & span{
+            cursor: pointer;
+        }
+        & .active{
+            color: #e945e3;
+            text-shadow: 0 0 5px #7A43B6;
+        }
     gap: 30px;
     & span {
       cursor: pointer;
