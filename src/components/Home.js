@@ -33,7 +33,7 @@ function Home() {
 
         <div className="card">
 
-          <img src="/profile.png" alt="" />
+          // <img src="/profile.png" alt="" />
 
           <div className="info">
             <div>Full Stack Developer</div>
