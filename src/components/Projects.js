@@ -31,7 +31,6 @@ function Projects() {
       language: "HTML5, CSS3, React JS, SockerIO,...",
       images: "/project2.PNG",
     },
-
   ]);
 
   const divs = useRef([]);
