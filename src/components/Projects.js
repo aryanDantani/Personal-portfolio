@@ -7,7 +7,9 @@ import {
 import CustomHook from "./CustomHook";
 
 function Projects() {
+  
   const [listProjects] = useState([
+
     {
       name: "Multi Mart",
       des: `Beauty UI similar to ecommerce website Fully responsive and mobile friendly User can add items to cart User can view details of an item User can show total price in cart In Item page user can add quantity of item to cart instead of click add more and more`,
@@ -17,6 +19,7 @@ function Projects() {
       projectLink:
         "https://678def3dabf58a00083e9bbf--multi-ecommerce-mart.netlify.app/",
     },
+
     {
       name: "Project Real-time chating in website",
       des: "Eu voluptate sit do labore consectetur in ad esse qui laborum ad eiusmod. Esse ea velit culpa exercitation anim enim reprehenderit. Fugiat nostrud non dolore aliquip quis in ea amet duis.",
@@ -24,6 +27,7 @@ function Projects() {
       language: "HTML5, CSS3, React JS, SockerIO,...",
       images: "/project2.PNG",
     },
+
     {
       name: "Project Real-time chating in website",
       des: "Eu voluptate sit do labore consectetur in ad esse qui laborum ad eiusmod. Esse ea velit culpa exercitation anim enim reprehenderit. Fugiat nostrud non dolore aliquip quis in ea amet duis.",
@@ -31,21 +35,30 @@ function Projects() {
       language: "HTML5, CSS3, React JS, SockerIO,...",
       images: "/project2.PNG",
     },
+
   ]);
 
   const divs = useRef([]);
+
   const scrollTab = useRef();
+
   CustomHook(scrollTab, divs);
 
   return (
     <section className="projects" ref={scrollTab}>
+
       <div className="title" ref={(el) => el && divs.current.push(el)}>
+
         This is my Projects
+
       </div>
+
       <div className="des" ref={(el) => el && divs.current.push(el)}>
+
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
         perspiciatis quae veniam amet nesciunt voluptatibus quis consectetur
         consequatur quisquam harum.
+
       </div>
       <div className="list">
         {listProjects.map((value, key) => (
